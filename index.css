@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+main{
+    padding-top: 7rem;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(42, 39, 39);
+}
+.left{
+    padding-top: 1rem;
+    color: white;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+.right{
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.search{
+    margin-right: 1rem;
+}
+.signup{
+    background-color: rgb(53, 186, 53);
+    padding: 0.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login{
+    margin-right: 2rem;
+    background-color: rgb(53, 186, 53);
+    padding: 0.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.second{
+    background-color:  rgb(250, 248, 248);
+}
+.anchor{
+    padding-top: 0.5rem;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+}
+a{
+  margin-right: 1rem;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./coding.jpg);
+    align-items: center;
+    padding-top: 2rem;
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+.htmltutorial{
+    padding-top: 2rem;
+}
+.htmltutorial > h2{
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.htmltutorial > ul{
+    padding-left: 4rem;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+.htmltutorial > h3{
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+#para{
+    background-color: rgb(135, 255, 135);
+    padding-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.htmltutorial > p{
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.doc{
+    margin-top: 2rem;
+}
+h4{
+    padding-left: 2rem;
+}
+.Example{
+    padding-left: 2rem;
+    width: 50%;
+    height: 500px;
+}
+.explain{
+    padding-top: 2rem;
+}
+.quiz{
+    padding-top: 2rem;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.que1{
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+}
+form{
+    padding-left: 2rem;
+}
+.que2{
+    padding-top: 2rem;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.htmltutorial{
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+ .dash{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin:5px 0;
+}
+.course{
+    display: none;
+    flex-direction: column;
+        position: absolute;
+        top: 225px;
+        left: 0;
+        background-color: #333;
+        padding: 10px;
+        color: white;
+
+}
+.hamburger:hover + .course{
+    display: flex;
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+    margin-top: 2rem;
+}
+.Contact{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.thanks{
+    margin-top: 2rem;
+    font-size: 2rem;
+    color:rgb(134, 168, 84);
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+@media(max-width:768px){
+    body{
+        background-color: palegoldenrod;
+    }
+    .navbar{
+        /* width: 100%; */
+        position: static;
+    }
+    .left{
+        margin: 0;
+    }
+    main{
+        padding-top: 2rem;
+    }
+    .first{
+       
+       flex-direction: column;
+       align-items: center;
+    }
+    .Example{
+        height: 200px;
+    }
+    .right{
+       flex-direction: column;
+       align-items: center;
+    }
+    .right > button{
+        margin-top: 1rem;
+        width: 70px;
+    }
+    .login{
+        margin-left: 2rem;
+    }
+    .search{
+        margin-left: 1rem;
+    }
+    .hero h2 p{
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .second{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+}
